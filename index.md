@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## About Dr. Kai Liu
 
-You can use the [editor on GitHub](https://github.com/clslkai/clslkai.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Currently Post-doctoral researcher at [CMD, SUSTECH](https://faculty.sustech.edu.cn/luogf/); Previous PhD at  [DTFL, SNU](http://dtfl.snu.ac.kr/)
 
 ### Markdown
 
