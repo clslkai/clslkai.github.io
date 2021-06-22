@@ -1,6 +1,6 @@
 ## About Kai Liu
 
-Current Post-doctoral researcher at [Computational Materials Design Group, Southern University of Science and Technology](https://faculty.sustech.edu.cn/luogf/); Previous PhD at  [Dielectric Thin Film Lab, Seoul National University](http://dtfl.snu.ac.kr/).
+Current Post-doctoral researcher at [CMD Group, Southern University of Science and Technology](https://faculty.sustech.edu.cn/luogf/); Previous PhD at  [Dielectric Thin Film Lab, Seoul National University](http://dtfl.snu.ac.kr/).
 
 ### Research interests:
 
