@@ -1,10 +1,10 @@
-## About Dr. Kai Liu
+## About Kai Liu
 
-Currently Post-doctoral researcher at [CMD, SUSTECH](https://faculty.sustech.edu.cn/luogf/); Previous PhD at  [DTFL, SNU](http://dtfl.snu.ac.kr/)
+Current Post-doctoral researcher at [Computational Materials Design Group, SUSTECH](https://faculty.sustech.edu.cn/luogf/); Previous PhD at  [Dielectric Thin Film Lab, Seoul National University](http://dtfl.snu.ac.kr/)
 
-### Markdown
+### Research interests:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I am a theoretical materials scientist and broadly interested in using density functional theory (DFT) to reveal materials process-structure-property relationships. My special focus is to understand the formation principle of atomic structures, which depends on process conditions, by predicting the anisotropic interaction between vapor sources and crystalline surfaces. I employ bottom-up computational approaches that combine DFT calculations with a variety of materials theory. Recently, I am interested in developing a computational methodology applicable to a wide range of materials, and particularly devoted to leveraging the mathematical foundations of crystallography, machine learning, and graph theory into materials design.
 
 ```markdown
 Syntax highlighted code block
