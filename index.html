@@ -11,10 +11,6 @@
 <body>
   <!-- Topbar -->
   <header class="topbar">
-    <button class="icon-btn" id="sidebarToggle" aria-label="打开/关闭侧边栏" title="菜单">
-      ☰
-    </button>
-
     <div class="brand">
       <div class="brand-title">📦 集创赛资料下载中心</div>
       <div class="brand-subtitle">规则 · 模板 · 工具链 · 培训 · 参考工程</div>
@@ -28,99 +24,77 @@
     </div>
   </header>
 
-  <!-- Layout -->
-  <div class="layout">
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar" aria-label="侧边栏目录">
-      <div class="sidebar-section">
-        <div class="sidebar-title">📚 分类目录</div>
-        <nav id="categoryNav" class="nav"></nav>
-      </div>
+  <!-- Categories (no sidebar) -->
+  <nav class="category-tabs" aria-label="分类标签">
+    <a class="tab" href="#cat=规则与通知">规则与通知</a>
+    <a class="tab" href="#cat=报名与提交模板">报名与提交模板</a>
+    <a class="tab" href="#cat=工具链与环境">工具链与环境</a>
+    <a class="tab" href="#cat=培训与教学资料">培训与教学资料</a>
+    <a class="tab" href="#cat=参考工程与示例">参考工程与示例</a>
+  </nav>
 
-      <div class="sidebar-section">
-        <div class="sidebar-title">⚡ 快捷入口</div>
-        <div class="quick">
-          <a class="quick-item" href="#cat=规则与通知">规则与通知</a>
-          <a class="quick-item" href="#cat=报名与提交模板">报名与提交模板</a>
-          <a class="quick-item" href="#cat=工具链与环境">工具链与环境</a>
-          <a class="quick-item" href="#cat=培训与教学资料">培训与教学资料</a>
-          <a class="quick-item" href="#cat=参考工程与示例">参考工程与示例</a>
+  <!-- Main -->
+  <main class="content">
+    <section class="hero">
+      <h1>一站式下载：集创赛全套资料</h1>
+      <p class="muted">
+        支持分类筛选与搜索。你可以把这里当作“资料下载中心主页”，后续需要分多页面也很容易扩展。
+      </p>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num" id="statTotal">—</div>
+          <div class="stat-label">资料条目</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="statShown">—</div>
+          <div class="stat-label">当前显示</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="statUpdated">—</div>
+          <div class="stat-label">最近更新</div>
         </div>
       </div>
+    </section>
 
-      <div class="sidebar-section hint">
-        <div class="hint-title">如何更新资料？</div>
-        <ol class="hint-list">
-          <li>把文件放到 <code>/assets/files/</code> 下对应目录</li>
-          <li>编辑 <code>/data/resources.json</code> 添加一条记录</li>
-          <li>提交到 GitHub，Pages 自动更新</li>
-        </ol>
+    <section class="toolbar">
+      <div class="chips" id="activeFilters"></div>
+      <div class="toolbar-right">
+        <select id="sortSelect" class="select">
+          <option value="updated_desc">按更新时间（新→旧）</option>
+          <option value="updated_asc">按更新时间（旧→新）</option>
+          <option value="title_asc">按标题（A→Z）</option>
+          <option value="title_desc">按标题（Z→A）</option>
+        </select>
       </div>
-    </aside>
+    </section>
 
-    <!-- Main -->
-    <main class="content">
-      <section class="hero">
-        <h1>一站式下载：集创赛全套资料</h1>
-        <p class="muted">
-          支持分类筛选与搜索。你可以把这里当作“资料下载中心主页”，后续需要分多页面也很容易扩展。
-        </p>
+    <section>
+      <div class="section-title">
+        <span> 资料列表</span>
+        <span class="muted" id="resultHint"></span>
+      </div>
 
-        <div class="stats">
-          <div class="stat">
-            <div class="stat-num" id="statTotal">—</div>
-            <div class="stat-label">资料条目</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num" id="statShown">—</div>
-            <div class="stat-label">当前显示</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num" id="statUpdated">—</div>
-            <div class="stat-label">最近更新</div>
-          </div>
-        </div>
-      </section>
+      <div id="resourceGrid" class="grid"></div>
 
-      <section class="toolbar">
-        <div class="chips" id="activeFilters"></div>
-        <div class="toolbar-right">
-          <select id="sortSelect" class="select">
-            <option value="updated_desc">按更新时间（新→旧）</option>
-            <option value="updated_asc">按更新时间（旧→新）</option>
-            <option value="title_asc">按标题（A→Z）</option>
-            <option value="title_desc">按标题（Z→A）</option>
-          </select>
-        </div>
-      </section>
+      <div id="emptyState" class="empty hidden">
+        <div class="empty-title">没有找到匹配的资料</div>
+        <div class="muted">试试换个关键词，或切换上方分类标签。</div>
+      </div>
+    </section>
 
-      <section>
-        <div class="section-title">
-          <span>📁 资料列表</span>
-          <span class="muted" id="resultHint"></span>
-        </div>
+    <section id="about" class="about">
+      <h2>关于本站</h2>
+      <p class="muted">
+        这是一个基于 GitHub Pages 的静态资料下载中心。你可以把规则、模板、PPT、示例工程等集中维护在一个仓库里。
+      </p>
+    </section>
 
-        <div id="resourceGrid" class="grid"></div>
-
-        <div id="emptyState" class="empty hidden">
-          <div class="empty-title">没有找到匹配的资料</div>
-          <div class="muted">试试换个关键词，或在左侧选择其他分类。</div>
-        </div>
-      </section>
-
-      <section id="about" class="about">
-        <h2>关于本站</h2>
-        <p class="muted">
-          这是一个基于 GitHub Pages 的静态资料下载中心。你可以把规则、模板、PPT、示例工程等集中维护在一个仓库里。
-        </p>
-      </section>
-
-      <footer class="footer">
-        <div>© <span id="year"></span> 集创赛资料下载中心</div>
-        <div class="muted">Powered by GitHub Pages</div>
-      </footer>
-    </main>
-  </div>
+    <footer class="footer">
+      <div>© <span id="year"></span> 集创赛资料下载中心</div>
+      <div class="muted">Powered by GitHub Pages</div>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
