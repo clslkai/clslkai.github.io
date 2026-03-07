@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>李教授 | 个人科研简历</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="profile">
+        <h1>李明 教授</h1>
+        <p>某某大学 · 计算机科学与技术学院</p>
+        <p>研究方向：人工智能、机器学习、医学图像分析</p>
+      </div>
+      <div class="contact">
+        <p><strong>Email:</strong> liming@example.edu.cn</p>
+        <p><strong>办公室:</strong> 科研楼 A503</p>
+        <p><strong>电话:</strong> +86-10-1234-5678</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <nav class="tabs" aria-label="科研简历导航">
+        <button class="tab active" data-target="about">个人信息</button>
+        <button class="tab" data-target="publications">发表论文</button>
+        <button class="tab" data-target="research">研究工作</button>
+        <button class="tab" data-target="group">课题组成员</button>
+        <button class="tab" data-target="teaching">教学与招生</button>
+      </nav>
+
+      <section id="about" class="panel active">
+        <h2>个人信息</h2>
+        <p>
+          李明，博士，教授，博士生导师。长期从事人工智能和医学影像分析研究，主持国家自然科学基金项目、重点研发子课题等多项科研项目。
+          担任多个国际期刊审稿人和程序委员会委员。
+        </p>
+        <ul>
+          <li>教育经历：清华大学 计算机科学与技术 博士</li>
+          <li>工作经历：某某大学 助理教授、副教授、教授</li>
+          <li>学术服务：IEEE TMI、Medical Image Analysis 审稿人</li>
+        </ul>
+      </section>
+
+      <section id="publications" class="panel">
+        <h2>代表性论文（近五年）</h2>
+        <ol>
+          <li>
+            Li, M.*, Zhang, Y., et al. <em>Transformer-based Multi-modal Diagnosis Network</em>. IEEE TMI, 2025.
+          </li>
+          <li>
+            Li, M., Chen, X.*, et al. <em>Self-supervised Learning for 3D Medical Segmentation</em>. Medical Image Analysis, 2024.
+          </li>
+          <li>
+            Wang, H., Li, M.* <em>Domain Adaptation in Clinical Imaging</em>. CVPR, 2023.
+          </li>
+          <li>
+            Li, M., et al. <em>Weakly Supervised Lesion Detection with Prompt Learning</em>. MICCAI, 2022.
+          </li>
+        </ol>
+      </section>
+
+      <section id="research" class="panel">
+        <h2>研究工作</h2>
+        <div class="cards">
+          <article>
+            <h3>方向一：医学影像智能分析</h3>
+            <p>面向肿瘤筛查、病灶分割和疗效评估，研究鲁棒、可解释的深度学习模型。</p>
+          </article>
+          <article>
+            <h3>方向二：大模型与多模态学习</h3>
+            <p>聚焦视觉-文本联合建模，探索临床报告生成与辅助诊断决策。</p>
+          </article>
+          <article>
+            <h3>方向三：可信人工智能</h3>
+            <p>研究联邦学习、隐私保护和模型不确定性估计在医疗场景的应用。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="group" class="panel">
+        <h2>课题组成员</h2>
+        <h3>教师与博士后</h3>
+        <ul>
+          <li>王华（副教授）— 医学影像分割</li>
+          <li>陈雪（博士后）— 多模态大模型</li>
+        </ul>
+
+        <h3>博士研究生</h3>
+        <ul>
+          <li>赵一鸣（2022级）— 自监督学习</li>
+          <li>刘佳怡（2023级）— 联邦学习</li>
+          <li>孙启航（2024级）— 可解释AI</li>
+        </ul>
+
+        <h3>硕士研究生</h3>
+        <ul>
+          <li>周楠、郑凯、黄婷、杨帆</li>
+        </ul>
+      </section>
+
+      <section id="teaching" class="panel">
+        <h2>教学与招生</h2>
+        <ul>
+          <li>本科课程：《机器学习导论》《人工智能基础》</li>
+          <li>研究生课程：《医学图像分析专题》《深度学习前沿》</li>
+          <li>每年招收博士生 1-2 名，硕士生 3-4 名，欢迎有志于AI+医疗交叉研究的同学联系。</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 李明教授课题组 · 最后更新：2026-03</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
