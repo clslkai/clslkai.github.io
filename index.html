@@ -3,114 +3,225 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>李教授 | 个人科研简历</title>
+    <meta
+      name="description"
+      content="刘凯课题组高级实践项目招生：DFT + AI 计算材料与半导体物理、Linux 嵌入式系统与工程开发。"
+    />
+    <title>刘凯课题组 | 高级实践项目招生</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="profile">
-        <h1>李明 教授</h1>
-        <p>某某大学 · 计算机科学与技术学院</p>
-        <p>研究方向：人工智能、机器学习、医学图像分析</p>
-      </div>
-      <div class="contact">
-        <p><strong>Email:</strong> liming@example.edu.cn</p>
-        <p><strong>办公室:</strong> 科研楼 A503</p>
-        <p><strong>电话:</strong> +86-10-1234-5678</p>
+      <div class="header-inner">
+        <div class="profile">
+          <span class="eyebrow">ADVANCED PROJECTS · 2026</span>
+          <h1>刘凯课题组</h1>
+          <p class="lead">面向本科生的长期高级实践项目</p>
+          <p class="subtitle">两条路线：科研深造 · 工程就业</p>
+        </div>
+        <div class="header-note">
+          <strong>招生方向</strong>
+          <span>DFT + AI 计算</span>
+          <span>Linux 嵌入式系统</span>
+        </div>
       </div>
     </header>
 
     <main class="container">
-      <nav class="tabs" aria-label="科研简历导航">
-        <button class="tab active" data-target="about">个人信息</button>
-        <button class="tab" data-target="publications">发表论文</button>
-        <button class="tab" data-target="research">研究工作</button>
-        <button class="tab" data-target="group">课题组成员</button>
-        <button class="tab" data-target="teaching">教学与招生</button>
+      <section class="intro-card">
+        <div>
+          <span class="section-label">加入课题组</span>
+          <h2>选一个方向，持续做完整项目</h2>
+          <p>
+            课题组面向希望提前进入科研或工程开发状态的本科生开放长期实践项目。项目以真实任务为主，要求持续投入，并形成可展示、可复现的成果。
+          </p>
+        </div>
+        <div class="choice-strip">
+          <div>
+            <strong>计划读研、读博</strong>
+            <span>优先选择 DFT + AI</span>
+          </div>
+          <div>
+            <strong>计划实习、就业</strong>
+            <span>优先选择 Linux 嵌入式</span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="tabs" aria-label="项目导航">
+        <button class="tab active" data-target="overview">项目总览</button>
+        <button class="tab" data-target="dft">DFT + AI</button>
+        <button class="tab" data-target="embedded">Linux 嵌入式</button>
+        <button class="tab" data-target="training">培养方式</button>
+        <button class="tab" data-target="apply">报名要求</button>
       </nav>
 
-      <section id="about" class="panel active">
-        <h2>个人信息</h2>
-        <p>
-          李明，博士，教授，博士生导师。长期从事人工智能和医学影像分析研究，主持国家自然科学基金项目、重点研发子课题等多项科研项目。
-          担任多个国际期刊审稿人和程序委员会委员。
-        </p>
-        <ul>
-          <li>教育经历：清华大学 计算机科学与技术 博士</li>
-          <li>工作经历：某某大学 助理教授、副教授、教授</li>
-          <li>学术服务：IEEE TMI、Medical Image Analysis 审稿人</li>
-        </ul>
-      </section>
-
-      <section id="publications" class="panel">
-        <h2>代表性论文（近五年）</h2>
-        <ol>
-          <li>
-            Li, M.*, Zhang, Y., et al. <em>Transformer-based Multi-modal Diagnosis Network</em>. IEEE TMI, 2025.
-          </li>
-          <li>
-            Li, M., Chen, X.*, et al. <em>Self-supervised Learning for 3D Medical Segmentation</em>. Medical Image Analysis, 2024.
-          </li>
-          <li>
-            Wang, H., Li, M.* <em>Domain Adaptation in Clinical Imaging</em>. CVPR, 2023.
-          </li>
-          <li>
-            Li, M., et al. <em>Weakly Supervised Lesion Detection with Prompt Learning</em>. MICCAI, 2022.
-          </li>
-        </ol>
-      </section>
-
-      <section id="research" class="panel">
-        <h2>研究工作</h2>
-        <div class="cards">
-          <article>
-            <h3>方向一：医学影像智能分析</h3>
-            <p>面向肿瘤筛查、病灶分割和疗效评估，研究鲁棒、可解释的深度学习模型。</p>
+      <section id="overview" class="panel active">
+        <h2>两个高级实践方向</h2>
+        <div class="direction-grid">
+          <article class="direction-card research-card">
+            <div class="card-topline">
+              <span class="badge">科研深造方向</span>
+              <span class="code">01</span>
+            </div>
+            <h3>DFT + AI 计算材料与半导体物理</h3>
+            <p>
+              面向半导体材料、缺陷物理和计算材料研究，学习第一性原理计算、AI for Materials、超算平台和科研数据分析。
+            </p>
+            <ul>
+              <li>适合计划读研、读博的同学</li>
+              <li>强调科研问题、计算方法和物理分析</li>
+              <li>可继续衔接科研项目、毕业设计和论文工作</li>
+            </ul>
+            <button class="text-link tab-jump" data-target="dft">查看方向详情 →</button>
           </article>
-          <article>
-            <h3>方向二：大模型与多模态学习</h3>
-            <p>聚焦视觉-文本联合建模，探索临床报告生成与辅助诊断决策。</p>
-          </article>
-          <article>
-            <h3>方向三：可信人工智能</h3>
-            <p>研究联邦学习、隐私保护和模型不确定性估计在医疗场景的应用。</p>
+
+          <article class="direction-card engineering-card">
+            <div class="card-topline">
+              <span class="badge">工程就业方向</span>
+              <span class="code">02</span>
+            </div>
+            <h3>Linux 嵌入式系统与工程开发</h3>
+            <p>
+              面向嵌入式 Linux、ARM、FPGA 和软硬件系统开发，重点训练代码、驱动、外设、调试和完整系统实现能力。
+            </p>
+            <ul>
+              <li>适合准备实习和就业的同学</li>
+              <li>强调动手、调试和完整工程项目</li>
+              <li>目标是形成可写入简历、可用于面试展示的项目</li>
+            </ul>
+            <button class="text-link tab-jump" data-target="embedded">查看方向详情 →</button>
           </article>
         </div>
       </section>
 
-      <section id="group" class="panel">
-        <h2>课题组成员</h2>
-        <h3>教师与博士后</h3>
-        <ul>
-          <li>王华（副教授）— 医学影像分割</li>
-          <li>陈雪（博士后）— 多模态大模型</li>
-        </ul>
+      <section id="dft" class="panel">
+        <div class="panel-heading">
+          <span class="badge">适合科研深造</span>
+          <h2>DFT + AI 计算材料与半导体物理</h2>
+          <p>适合希望继续读研、读博，并准备长期从事科研工作的同学。</p>
+        </div>
 
-        <h3>博士研究生</h3>
-        <ul>
-          <li>赵一鸣（2022级）— 自监督学习</li>
-          <li>刘佳怡（2023级）— 联邦学习</li>
-          <li>孙启航（2024级）— 可解释AI</li>
-        </ul>
+        <div class="content-grid">
+          <div class="content-block">
+            <h3>主要学习内容</h3>
+            <ul class="check-list">
+              <li>使用 VASP 等软件开展第一性原理计算</li>
+              <li>能带、态密度、缺陷形成能和缺陷能级分析</li>
+              <li>缺陷迁移、扩散与反应路径计算</li>
+              <li>Python 数据处理、计算自动化与结果分析</li>
+              <li>机器学习势、图神经网络等 AI for Materials 方法</li>
+              <li>Linux、超算平台与 Slurm 作业管理</li>
+              <li>论文阅读、科研选题、数据整理和论文写作</li>
+            </ul>
+          </div>
+          <div class="content-block emphasis">
+            <h3>希望你最终做到</h3>
+            <p>
+              能够独立完成一套基本 DFT 计算流程，判断计算结果是否可靠，解释结果对应的物理问题，并把计算过程整理成可复现的研究记录。
+            </p>
+            <p>
+              基础较好、投入稳定的同学，可继续参与课题组正式科研项目，并衔接毕业设计、竞赛或论文工作。
+            </p>
+          </div>
+        </div>
 
-        <h3>硕士研究生</h3>
-        <ul>
-          <li>周楠、郑凯、黄婷、杨帆</li>
-        </ul>
+        <div class="skill-row">
+          <span>VASP</span><span>DFT</span><span>Python</span><span>Linux</span><span>Slurm</span><span>AI for Materials</span>
+        </div>
       </section>
 
-      <section id="teaching" class="panel">
-        <h2>教学与招生</h2>
-        <ul>
-          <li>本科课程：《机器学习导论》《人工智能基础》</li>
-          <li>研究生课程：《医学图像分析专题》《深度学习前沿》</li>
-          <li>每年招收博士生 1-2 名，硕士生 3-4 名，欢迎有志于AI+医疗交叉研究的同学联系。</li>
-        </ul>
+      <section id="embedded" class="panel">
+        <div class="panel-heading">
+          <span class="badge">适合工程就业</span>
+          <h2>Linux 嵌入式系统与工程开发</h2>
+          <p>适合希望提升工程能力，并为嵌入式、芯片、电子、测试或软件相关岗位提前准备的同学。</p>
+        </div>
+
+        <div class="content-grid">
+          <div class="content-block">
+            <h3>主要学习内容</h3>
+            <ul class="check-list">
+              <li>Linux 基础与常用开发工具</li>
+              <li>C/C++、Shell、Python 基础开发</li>
+              <li>ARM 开发板使用与 Linux 系统部署</li>
+              <li>U-Boot、Linux Kernel、设备树与驱动基础</li>
+              <li>GPIO、UART、I2C、SPI、MIPI 等硬件接口</li>
+              <li>传感器、显示屏、摄像头等外设开发</li>
+              <li>Qt、网络通信和简单上位机开发</li>
+              <li>FPGA 与嵌入式系统协同开发</li>
+              <li>Git、调试工具和工程项目管理</li>
+            </ul>
+          </div>
+          <div class="content-block emphasis">
+            <h3>项目示例</h3>
+            <ul>
+              <li>Linux 图形界面终端</li>
+              <li>环境监测与数据采集系统</li>
+              <li>摄像头与图像处理系统</li>
+              <li>FPGA + ARM 数据处理平台</li>
+              <li>嵌入式边缘计算设备</li>
+              <li>小型智能仪器与控制系统</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <span>Linux</span><span>C/C++</span><span>ARM</span><span>FPGA</span><span>Driver</span><span>Git</span>
+        </div>
+      </section>
+
+      <section id="training" class="panel">
+        <h2>培养方式</h2>
+        <p class="panel-intro">项目采用长期实践制。重点看持续学习、实际完成度和问题解决能力。</p>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>基础训练</h3>
+            <p>根据方向完成 Linux、编程、专业软件或开发板的基础任务。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>独立任务</h3>
+            <p>每人负责明确的小任务，要求自己查资料、实现、调试并记录过程。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>完整项目</h3>
+            <p>逐步进入真实科研问题或工程项目，形成计算数据、代码、系统或技术文档。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>成果沉淀</h3>
+            <p>优秀同学继续进入科研项目、毕业设计、竞赛、论文或高质量工程作品。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="apply" class="panel">
+        <h2>报名要求</h2>
+        <div class="apply-layout">
+          <div>
+            <h3>适合报名</h3>
+            <ul class="check-list">
+              <li>本科生均可报名，建议从大二、大三开始参加</li>
+              <li>愿意连续投入时间完成一个完整项目</li>
+              <li>遇到问题愿意查资料、调试和复盘</li>
+              <li>有 Python、C/C++、Linux、半导体物理或数字电路基础者更容易进入项目</li>
+            </ul>
+          </div>
+          <aside class="apply-box">
+            <h3>如何选择方向</h3>
+            <p><strong>准备读研、读博：</strong><br />选择 DFT + AI。</p>
+            <p><strong>准备实习、就业：</strong><br />选择 Linux 嵌入式。</p>
+            <p class="small">基础并非硬性要求。更看重学习能力、执行力和稳定参与。</p>
+          </aside>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 李明教授课题组 · 最后更新：2026-03</p>
+      <p>© 2026 刘凯课题组 · Advanced Projects</p>
     </footer>
 
     <script src="script.js"></script>
