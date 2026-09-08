@@ -5,263 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="刘凯课题组主页。研究方向包括半导体缺陷物理、第一性原理计算、AI for Materials、高性能科学计算与 Linux 嵌入式系统。"
+      content="刘凯课题组主页。研究方向包括半导体缺陷物理、DFT + AI、高性能科学计算与 Linux 嵌入式系统。"
     />
-    <title>刘凯课题组 | Research Group</title>
+    <title>刘凯课题组</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="header-inner">
-        <div class="profile">
-          <span class="eyebrow">RESEARCH · COMPUTING · EMBEDDED SYSTEMS</span>
-          <h1>刘凯课题组</h1>
-          <p class="lead">半导体缺陷物理 · DFT + AI · 高性能科学计算 · Linux 嵌入式系统</p>
-          <p class="subtitle">面向科研问题开展计算研究，同时建设可落地的软硬件工程实践平台。</p>
-        </div>
-        <div class="header-note">
-          <strong>主要方向</strong>
-          <span>Semiconductor Defect Physics</span>
-          <span>DFT + AI for Materials</span>
-          <span>Linux & Embedded Systems</span>
-        </div>
+        <h1>刘凯课题组</h1>
+        <p>半导体缺陷物理 · DFT + AI · 高性能科学计算 · Linux 嵌入式系统</p>
       </div>
     </header>
 
     <main class="container">
-      <section class="intro-card">
-        <div>
-          <span class="section-label">GROUP PROFILE</span>
-          <h2>计算材料与嵌入式系统交叉实践</h2>
-          <p>
-            课题组目前形成两条技术路线。第一条面向半导体材料与缺陷物理，使用第一性原理计算、AI 方法和高性能计算平台开展研究；第二条面向 Linux 嵌入式系统、ARM、FPGA 和软硬件协同开发，强调完整工程实现。
-          </p>
-        </div>
-        <div class="summary-grid">
-          <div><strong>科研计算</strong><span>VASP · DFT · Defects · AI</span></div>
-          <div><strong>计算平台</strong><span>Linux · Slurm · HPC</span></div>
-          <div><strong>工程实践</strong><span>ARM · FPGA · Embedded Linux</span></div>
-        </div>
-      </section>
-
       <nav class="tabs" aria-label="课题组导航">
-        <button class="tab active" data-target="home">课题组概况</button>
+        <button class="tab active" data-target="home">研究方向</button>
         <button class="tab" data-target="pi">导师简介</button>
         <button class="tab" data-target="projects">科研项目</button>
-        <button class="tab" data-target="outcomes">学生成果</button>
         <button class="tab" data-target="resources">平台资源</button>
+        <button class="tab" data-target="outcomes">学生成果</button>
         <button class="tab" data-target="recruitment">招生与联系</button>
       </nav>
 
       <section id="home" class="panel active">
-        <div class="section-head">
-          <span class="section-label">RESEARCH GROUP</span>
-          <h2>课题组概况</h2>
-        </div>
+        <h2>高性能科学计算与嵌入式系统</h2>
+        <p class="intro">
+          课题组主要开展两类工作：一类使用第一性原理计算、AI 方法和高性能计算平台研究半导体材料与缺陷物理；另一类开展 Linux 嵌入式系统、ARM、FPGA 和软硬件协同开发。
+        </p>
+
         <div class="direction-grid">
-          <article class="direction-card research-card">
-            <div class="card-topline">
-              <span class="badge">Research</span>
-              <span class="code">01</span>
-            </div>
-            <h3>半导体缺陷物理与 DFT + AI</h3>
-            <p>
-              研究宽禁带半导体、二维材料及相关体系中的本征缺陷、杂质、复合体、载流子俘获和迁移问题。
-            </p>
+          <article>
+            <h3>高性能科学计算</h3>
+            <p>面向半导体材料与缺陷物理问题，开展 DFT、缺陷计算、载流子俘获、缺陷迁移及 AI for Materials 研究。</p>
             <ul>
-              <li>第一性原理电子结构与缺陷计算</li>
-              <li>缺陷形成能、能级、迁移与非辐射过程</li>
-              <li>AI for Materials 与计算流程自动化</li>
-              <li>Linux 超算环境与高性能科学计算</li>
+              <li>半导体缺陷物理</li>
+              <li>VASP 与第一性原理计算</li>
+              <li>DFT + AI / AI for Materials</li>
+              <li>Linux、Slurm 与并行计算</li>
             </ul>
           </article>
 
-          <article class="direction-card engineering-card">
-            <div class="card-topline">
-              <span class="badge">Engineering</span>
-              <span class="code">02</span>
-            </div>
-            <h3>Linux 嵌入式与软硬件系统</h3>
-            <p>
-              面向 ARM、FPGA 和嵌入式 Linux 平台开展系统开发，训练从底层接口到应用程序的完整工程能力。
-            </p>
+          <article>
+            <h3>Linux 嵌入式系统</h3>
+            <p>面向 ARM、FPGA 和嵌入式 Linux 平台开展工程实践，完成驱动、外设、数据处理和应用程序开发。</p>
             <ul>
-              <li>Embedded Linux、驱动与设备树</li>
-              <li>GPIO、I2C、SPI、UART、MIPI 等接口</li>
-              <li>FPGA + ARM 协同数据处理</li>
-              <li>传感、显示、图像与边缘计算应用</li>
+              <li>Embedded Linux 与驱动开发</li>
+              <li>ARM / SoC FPGA 平台</li>
+              <li>FPGA + ARM 协同处理</li>
+              <li>传感、显示、图像与边缘计算</li>
             </ul>
           </article>
         </div>
       </section>
 
       <section id="pi" class="panel">
-        <div class="section-head">
-          <span class="section-label">PRINCIPAL INVESTIGATOR</span>
-          <h2>导师简介</h2>
-        </div>
+        <h2>导师简介</h2>
         <div class="pi-layout">
           <img class="avatar" src="https://avatars.githubusercontent.com/u/20180234?v=4" alt="刘凯" />
           <div>
             <h3>刘凯</h3>
             <p>
-              主要从事半导体缺陷物理、第一性原理计算、高性能科学计算和嵌入式系统相关工作。科研方向关注非平衡条件下半导体缺陷的形成、稳定性、迁移和载流子俘获过程，并结合 AI 方法提高材料计算和数据分析效率。
+              主要从事半导体缺陷物理、第一性原理计算、高性能科学计算和嵌入式系统相关工作。科研工作关注半导体缺陷的形成、稳定性、迁移和载流子俘获过程，并结合 AI 方法开展材料计算和数据分析。
             </p>
             <p>
-              工程方向关注 Linux 环境下的科学计算软件、ARM/FPGA 嵌入式系统及软硬件协同开发。课题组鼓励学生以可复现的计算流程、可运行的代码和可展示的系统作为阶段成果。
+              工程实践方向主要涉及 Linux、ARM、FPGA 及软硬件协同开发。
             </p>
-            <div class="skill-row">
-              <span>Semiconductor Physics</span><span>DFT</span><span>VASP</span><span>AI for Materials</span><span>HPC</span><span>Embedded Linux</span>
-            </div>
           </div>
         </div>
       </section>
 
       <section id="projects" class="panel">
-        <div class="section-head">
-          <span class="section-label">CURRENT PROJECTS</span>
-          <h2>目前科研项目</h2>
-        </div>
+        <h2>科研项目</h2>
         <div class="project-list">
           <article>
-            <div class="project-index">01</div>
-            <div>
-              <h3>AlN：非平衡条件下的 p 型掺杂与缺陷调控</h3>
-              <p>
-                研究光照、偏压等非平衡边界条件对 AlN 中受主、补偿缺陷和复合体稳定性的影响，分析缺陷形成能、深能级、迁移过程与有效受主浓度之间的关系。
-              </p>
-              <div class="skill-row"><span>AlN</span><span>Defect Thermodynamics</span><span>HSE</span><span>Carrier Capture</span></div>
-            </div>
-          </article>
-
-          <article>
-            <div class="project-index">02</div>
-            <div>
-              <h3>ZnO：非平衡边界下的深能级俘获与构型演化</h3>
-              <p>
-                研究准费米能级分裂、电荷态切换、缺陷构型重排以及载流子捕获和释放过程，识别主要深能级中心及其工作条件。
-              </p>
-              <div class="skill-row"><span>ZnO</span><span>Deep Levels</span><span>SRH</span><span>Nonradiative Capture</span></div>
-            </div>
-          </article>
-
-          <article>
-            <div class="project-index">03</div>
-            <div>
-              <h3>MoSe₂：电场驱动缺陷迁移与可重构导电通路</h3>
-              <p>
-                研究硒空位等缺陷的形成、能级和迁移行为，分析电场作用下缺陷运动、局域导电通路形成及其与器件电学特性的联系。
-              </p>
-              <div class="skill-row"><span>MoSe₂</span><span>2D Materials</span><span>NEB</span><span>Defect Migration</span></div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="outcomes" class="panel">
-        <div class="section-head">
-          <span class="section-label">STUDENT OUTCOMES</span>
-          <h2>学生成果</h2>
-        </div>
-        <p class="panel-intro">
-          本栏目用于持续记录学生参与课题组后的科研与工程成果。具体论文、竞赛、毕业设计和项目作品将在形成后更新。
-        </p>
-        <div class="outcome-grid">
-          <article>
-            <span>01</span>
-            <h3>科研成果</h3>
-            <p>论文、会议报告、科研数据、计算方法和可复现工作流。</p>
+            <h3>AlN：非平衡条件下的 p 型掺杂与缺陷调控</h3>
+            <p>研究光照、偏压等非平衡条件对受主、补偿缺陷和复合体稳定性的影响，分析缺陷形成能、深能级、迁移过程与有效受主浓度之间的关系。</p>
           </article>
           <article>
-            <span>02</span>
-            <h3>毕业设计</h3>
-            <p>围绕半导体计算、AI for Materials、嵌入式系统等方向形成完整毕业设计。</p>
+            <h3>ZnO：深能级俘获与构型演化</h3>
+            <p>研究准费米能级分裂、电荷态切换、缺陷构型重排以及载流子捕获和释放过程，识别主要深能级中心。</p>
           </article>
           <article>
-            <span>03</span>
-            <h3>工程作品</h3>
-            <p>形成可运行、可演示、可写入简历的嵌入式软硬件项目和代码仓库。</p>
+            <h3>MoSe₂：电场驱动缺陷迁移与可重构导电通路</h3>
+            <p>研究硒空位等缺陷的形成、能级和迁移行为，分析电场作用下缺陷运动与器件导电特性的联系。</p>
           </article>
         </div>
       </section>
 
       <section id="resources" class="panel">
-        <div class="section-head">
-          <span class="section-label">COMPUTING & HARDWARE</span>
-          <h2>计算与开发资源</h2>
-        </div>
+        <h2>平台资源</h2>
         <div class="resource-grid">
           <article>
-            <h3>高性能计算环境</h3>
+            <h3>高性能计算</h3>
             <ul>
-              <li>Linux 服务器与 Slurm 作业调度环境</li>
-              <li>多节点 CPU 并行计算资源</li>
+              <li>Linux 服务器与 Slurm 作业调度</li>
+              <li>多节点 CPU 并行计算环境</li>
               <li>VASP 6.x 第一性原理计算环境</li>
-              <li>Python 科研数据处理与自动化工具链</li>
+              <li>Python 科研计算与自动化工具链</li>
             </ul>
           </article>
           <article>
-            <h3>材料计算软件</h3>
+            <h3>材料计算</h3>
             <ul>
-              <li>VASP：结构、能带、缺陷与杂化泛函计算</li>
-              <li>PWmat：载流子俘获及相关材料计算</li>
-              <li>COMSOL：器件与多物理场建模</li>
-              <li>Wannier90、ELPA、HDF5 等计算工具链</li>
+              <li>VASP</li>
+              <li>PWmat</li>
+              <li>COMSOL</li>
+              <li>Wannier90、ELPA、HDF5 等工具</li>
             </ul>
           </article>
           <article>
-            <h3>嵌入式开发平台</h3>
+            <h3>嵌入式开发</h3>
             <ul>
               <li>ARM Linux 开发板</li>
-              <li>FPGA/SoC FPGA 开发平台</li>
-              <li>显示、触摸、摄像头与常用传感器模块</li>
-              <li>JTAG、串口及常用软硬件调试工具</li>
+              <li>FPGA / SoC FPGA 开发平台</li>
+              <li>显示、触摸、摄像头与传感器模块</li>
+              <li>JTAG、串口及常用调试工具</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section id="recruitment" class="panel">
-        <div class="section-head">
-          <span class="section-label">JOIN US</span>
-          <h2>招生与联系</h2>
+      <section id="outcomes" class="panel">
+        <h2>学生成果</h2>
+        <p class="intro">本栏目记录学生参与课题组后的论文、毕业设计、竞赛和工程项目。具体成果形成后持续更新。</p>
+        <div class="simple-grid">
+          <article><h3>科研成果</h3><p>论文、科研数据、计算方法和可复现工作流。</p></article>
+          <article><h3>毕业设计</h3><p>半导体计算、AI for Materials 和嵌入式系统相关课题。</p></article>
+          <article><h3>工程项目</h3><p>可运行、可展示的嵌入式软硬件项目和代码仓库。</p></article>
         </div>
-        <p class="panel-intro">
-          欢迎对计算材料、半导体物理、Linux、高性能计算和嵌入式系统感兴趣的本科生参与课题组实践。
-        </p>
+      </section>
+
+      <section id="recruitment" class="panel">
+        <h2>招生与联系</h2>
+        <p class="intro">欢迎对半导体计算、高性能科学计算和嵌入式系统感兴趣的本科生参加课题组实践。</p>
 
         <div class="recruit-card">
-          <div class="card-topline">
-            <span class="badge accent-badge">高级实践项目</span>
-            <span class="code">ADVANCED PROJECT</span>
-          </div>
-          <h3>本科生长期实践项目</h3>
-          <p>
-            高级实践项目设置两个内部方向。计划读研、读博的同学可选择 <strong>DFT + AI</strong>；希望加强工程实践、准备实习和就业的同学可选择 <strong>Linux 嵌入式</strong>。
-          </p>
-          <div class="recruit-directions">
-            <div>
-              <strong>DFT + AI</strong>
-              <span>科研深造 · 第一性原理 · 缺陷物理 · AI for Materials</span>
-            </div>
-            <div>
-              <strong>Linux 嵌入式</strong>
-              <span>工程就业 · ARM · FPGA · Driver · Embedded Linux</span>
-            </div>
-          </div>
-          <p class="small">建议从大二、大三开始参加。更看重学习能力、执行力和持续投入。</p>
+          <span class="tag">高级实践项目</span>
+          <h3>本科生长期实践</h3>
+          <p><strong>DFT + AI：</strong>适合计划读研、读博，希望进入科研方向的同学。</p>
+          <p><strong>Linux 嵌入式：</strong>适合希望加强工程实践，为实习和就业做准备的同学。</p>
+          <p class="small">建议从大二、大三开始参加，重点考察学习能力、执行力和持续投入。</p>
         </div>
 
         <div class="contact-box">
           <h3>联系方式</h3>
           <p>GitHub：<a href="https://github.com/clslkai" target="_blank" rel="noopener noreferrer">github.com/clslkai</a></p>
-          <p class="small">邮箱、办公室及具体报名方式确认后可继续补充到本页。</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 刘凯课题组 · Research Group</p>
+      <p>© 2026 刘凯课题组</p>
     </footer>
 
     <script src="script.js"></script>
