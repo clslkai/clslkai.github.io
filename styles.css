@@ -119,11 +119,11 @@ button {
   gap: 0.9rem;
 }
 
-.direction-grid {
+.direction-grid,
+.resource-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.resource-grid,
 .simple-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
